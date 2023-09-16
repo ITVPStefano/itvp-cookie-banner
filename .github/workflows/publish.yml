@@ -27,13 +27,13 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: npm && npm i install
+        run: npm i
 
       - name: Build
         run: npm run build
 
-      - name: Publish
-        run: npm run publish
+      # - name: Publish
+      #   run: npm run publish
 
         env:
           # We need this to our NPM account
